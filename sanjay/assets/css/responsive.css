@@ -1,453 +1,305 @@
-/* ==================================================================
+/*
+Author       : Hash Theme.
+Template Name: Navana - Industrial Constriction Business Html5 Template
+Version      : 1.0
+*/
 
-*   MaterialX Media Queries
+/* Large Layouts */
 
-TOC : 
-
-1. screenwidth greater than 1024px (Medium Screen/Large Tablets)
-2. screenwidth less than 1024px (Medium Screen/Large Tablets)
-3. screenwidth less than 960px (Mobile wide/Smaller Tablets)
-4. screenwidth less than 768px (Mobile wide/Smaller Tablets)
-5. screenwidth greater than 480px (Medium Screen Mobile)
-
-
-/* ================================================================== */
-
-
-
-/* Screens Resolution : 1024px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 1365px) {
-    .side-nav li {
-        margin-left: 30px;
+@media only screen and (max-width: 1400px) {} 
+@media only screen and (max-width: 1340px) {
+    .main-header .logo-area .header-info-box {
+        margin-left: 62px;
+    }
+    .main-header .logo-area .header-info-box-2 {
+        margin-left: 68px;
+    }
+    .main-header .header-search ul li.menuleft-address {
+        padding: 10px 31px;
     }
 }
-
-
-/* Screens Resolution : 1024px
--------------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-
-    .home-title {
-        font-size: 54px;
+@media only screen and (max-width: 1200px) {
+    .main-header .logo-area .header-info-box {
+        margin-left: 48px;
     }
-
-    .home-subtitle {
-        font-size: 16px;
+    .main-header .logo-area .header-info-box-2 {
+        margin-left: 53px;
     }
-
-    #about .padd-tb-120 {
-        padding-bottom: 80px;
-        padding-top: 80px;
+    .main-header .mainmenu-area .navbar-nav .nav-link {
+        padding: 22px 25px;
     }
-
+    .main-header .header-search ul li.menuleft-address {
+        padding: 10px 21px;
+    }
+    .footer-social-text {
+        width: 67%;
+    }
+    .mailing-list .form-group i {
+        right: 16px;
+    }
 }
-
-@media only screen and (max-width: 992px) {
-
-    .home-inner {
-        min-height: 400px;
+@media only screen and (max-width: 1140px) {
+    .main-header .logo-area .header-info-box {
+        margin-left: 18px;
     }
-
-    .person-about {
-        margin-bottom: 40px;
+    .main-header .logo-area .header-info-box-2 {
+        margin-left: 24px;
     }
-
-    .title {
-        font-size: 42px;
+    .main-header .mainmenu-area .navbar-nav .nav-link {
+        padding: 22px;
     }
-
-    .section-head {
-        margin-bottom: 40px;
+    .main-header .header-search ul li.menuleft-address {
+        padding: 10px 2px;
     }
-
-    .skill-graph .single-skill {
-        height: 450px;
+    .footer-social-text {
+        width: 66%;
     }
-
-    .after-li {
-        height: 250px;
+    .footer-logo-text {
+        width: 76%;
     }
-
-    .primary-nav .brand-logo {
-        left: 75px;
-        max-width: 300px;
-        position: absolute;
+}
+@media only screen and (max-width: 1023px) {
+    .main-header .logo-area .header-info-box {
+        margin-left: 11px;
     }
-
-    .primary-nav .brand-logo {
-        display: none;
+    .main-header .logo-area .header-info-box-2 {
+        margin-left: 16px;
     }
-
-
-    .side-nav li a, .side-nav li.current a, .side-nav li a:hover {
-        border: none;
+    .main-header .mainmenu-area .navbar-nav .nav-link {
+        padding: 10px;
     }
-
-
-    nav a.button-collapse {
-        color: #727272;
-        float: left;
-        left: 0;
-        position: absolute;
-        top: 8px;
-        z-index: 99;
+    .main-header .header-search ul li.menuleft-address {
+        padding: 10px 1px;
     }
-
-    ul.side-nav {
-        z-index: 999;
+    .menuleft-search a i {
+        width: 51px;
     }
-
-    .side-nav li:first-child, .side-nav li {
-        margin-left: 0;
+    .footer-logo-text {
+        width: 76%;
     }
-
-    nav ul li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    .footer-social-text {
+        width: 58%;
     }
-
-
-    .side-nav li a {
-        text-transform: none;
-        line-height: 10px;
-        padding: 0;
+    .main-header .mainmenu-area .navbar-nav .nav-link {
+        padding: 22px 18px;
     }
+}
+/* Tablet Layout: 768px. */
 
-    .side-nav li i {
-        display: inline-block;
-        font-size: 15px;
-        line-height: 60px;
-        width: 40px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .main-header .top-area .info-menu,
+    .main-header .top-area .social {
+        float: none;
+        text-align: center;
     }
-
-    .mobile-profile{
-        background: url('../../images/home-bg.jpg') no-repeat scroll center center / cover ;
-        display: block;
-        min-height: 160px;
+    .main-header .top-area .info-menu {
+        margin-bottom: 20px;
+    }
+    .main-header .top-area .social ul li {
+        border: 1px solid #E1E1E1;
+        margin-bottom: 20px;
+		display: inline-block;
+		float: none;
+    }
+    .logo {
+        margin-bottom: 30px;
+    }
+    .main-header .logo-area .header-info-box {
+        padding: 4px 20px 0 80px;
+        margin: 0 0 16px 57px;
+    }
+    .main-header .logo-area .header-info-box-2 {
+        padding: 4px 20px 0 80px;
+        margin: 0 0 16px 57px;
+    }
+    .main-header .header-search ul li.menuleft-address {
+        padding: 8px 36px;
+        float: right;
+    }
+    .main-header .header-search ul li.menuleft-search {
+        float: right;
+    }
+    .main-header .header-search .dropdown {
         position: relative;
     }
-
-    .profile-inner {
-        background: none repeat scroll 0 0 rgba(60, 70, 80, 0.7);
-        height: 100%;
+    .main-header .header-search .dropdown-menu {
         left: 0;
-        padding: 20px;
-        position: absolute;
+    }
+    .header-2.main-header .header-search .dropdown-menu {
+        left: auto;
+    }
+    .sticky-menu {
+        position: relative !important;
+    }
+    .navana-single-slide h2 {
+        font-size: 45px;
+    }
+    .home-btn-1,
+    .home-btn-2 {
+        padding: 10px 30px;
+    }
+    .about-image {
+        text-align: center;
+    }
+    .about-image img {
+        position: relative;
         top: 0;
+    }
+    .section-title p {
         width: 100%;
     }
-
-    .pp-container {
-        display: block;
-        margin: 5px 0;
-        width: 60px;
+    .service-tab .nav-tabs .nav-link {
+        padding: .5rem 1rem;
     }
-
-    .pp-container img {
-        border-radius: 50%;
-        width: 100%;
-        display: block;
+    .single-counter {
+        margin: 10px 0 20px;
     }
-
-    .mobile-profile h3 {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-        margin: 8px auto 5px;
-        text-align: left;
+    .client-slider.owl-theme .owl-nav .owl-next {
+        right: -13%;
     }
-
-    .mobile-profile h5 {
-        color: #fff;
-        font-size: 13px;
-        text-align: left;
+    .client-slider.owl-theme .owl-nav .owl-prev {
+        left: -13%;
     }
-
-    .contact-form .submit-wrap {
-        margin-top: 40px;
+    footer .footer-widget:not(:last-child) {
+        margin-bottom: 40px;
     }
-
-    .about-inner {
-        margin: 50px 0;
+    .sidebar-padding-right {
+        padding-right: 15px;
     }
-
-    .padd-tb-120 {
-        padding-bottom: 80px;
-        padding-top: 80px;
+    .sidebar-padding-left {
+        padding-left: 15px;
     }
-
-    #portfolio-item-loader {
-        margin: 0 auto;
-        display: block;
-    }
-
-    #skill .sec-overlay {
-        padding-bottom: 80px;
-        padding-top: 70px;
-    }
-
-    .portfolio-wrap {
-        padding-bottom: 80px;
-    }
-
-    .portfolio-top {
-        margin-bottom: 50px;
-        padding-bottom: 15px;
-    }
-
-    .experience-wrap {
-        padding: 80px 0;
-    }
-
-    .about-inner, .skill-inner, .experience-inner, 
-    .education-inner,  .portfolio-inner, .team-inner, 
-    .funfact-inner, .testimonial-inner, .contact-inner {
-        padding: 0 20px;
-    }
-
-    #map {
-        height: 495px;
+	.pricing-table-default {
+        margin-bottom: 60px;
     }
 }
-
-@media only screen and (max-width: 991px) {
-
-    .skill-left {
-        margin-top: 0;
-    }
-
-    .skill-inner {
-        margin-top: 0;
-    }
-
-    .btn-wrapp {
-        display: block;
-        margin: 0 auto;
-        position: static;
-        width: 142px;
-    }
-
-    .btn-wrapp a {
-        display: inline-block;
-        margin-bottom: 0;
-        margin-top: 50px;
-    }
-
-    .btn-wrapp a:first-child {
-        margin-right: 25px;
-    }
-}
+/* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
-
-    .home-inner {
-        height: calc(100vh - 100px);
+    .main-header .top-area .info-menu,
+    .main-header .top-area .social {
+        float: none;
+        text-align: center;
     }
-
-    .section-head {
-        margin-bottom: 30px;
-    }
-
-    .home-title {
-        font-size: 42px;
-    }
-
-    .home-subtitle {
-        font-size: 14px;
-    }
-
-    .title {
-        font-size: 36px;
-        line-height: 1.1;
-    }
-
-    .modal .title {
-        font-size: 18px;
-        line-height: 1.2;
-    }
-    .section-title {
+    .main-header .top-area .info-menu {
         margin-bottom: 20px;
     }
-
-    .person-about .subtitle {
-        font-size: 24px;
+    .main-header .top-area .social ul li {
+        border: 1px solid #E1E1E1;
+        margin-bottom: 20px;
+		display: inline-block;
+		float: none;
     }
-
-    .about-wrap {
-        padding: 30px 0;
-    }
-
-    .person-img img {
-        margin-bottom: 25px;
-    }
-
-    .funfact-box .card-panel {
-        margin-bottom: 30px;
-    }
-
-    .education-wrap, .experience-wrap,
-    .team-wrap, .fun-facts-wrap, .testimonial-wrap, .blog-wrap, .contact-wrap {
-        padding-bottom: 80px;
-        padding-top: 80px;
-    }
-
-    .portfolio-top {
-        padding-top: 80px;
-        padding-bottom: 15px;
-    }
-
-    .portfolio-category li {
-        margin-bottom: 15px;
-        margin-right: 20px;
-    }
-
-    .skill-graph .single-skill {
-        height: 335px;
-    }
-
-    .after-li {
-        height: 200px;
-    }
-
-    .skill-right {
-        padding-top: 30px;
-    }
-
-    .skill-title {
-        padding-top: 5px;
-    }
-
-    .contact-info li {
-        border: none;
-        float: none;
-        margin-bottom: 10px;
-        margin-right: 10px;
-        padding-right: 10px;
-        text-align: left;
-    }
-
-    #map {
-        border-radius: 0;
-        height: 250px;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .cform-wrapper {
-        border-radius: 0;
-    }
-
-    .social-icons {
-        display: block;
-        float: none;
-        margin: 15px auto;
+    .logo {
         text-align: center;
-        width: 100%;
-    }
-    .copyright {
-        display: block;
-        float: none;
-        padding: 5px 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    .thumb-slides-container {
-        margin: 0 auto;
-        max-width: 450px;
-    }
-
-    .protfolio-item li {
-        float: left;
-        margin-right: 0.5%;
-        margin-bottom: 0.5%;
-        width: 49%;
-    }
-
-}
-
-@media only screen and (max-width: 479px) {
-
-    .home-title {
-        font-size: 36px;
-    }
-
-    .home-subtitle {
-        font-size: 13px;
-    }
-
-    .title {
-        font-size: 32px;
-    }
-
-    .static-menu form {
-        width: 170px;
-    }
-
-    .section-head {
         margin-bottom: 30px;
     }
-
-    .about-subtitle {
-        font-size: 20px;
-        margin-bottom: 25px;
+    .main-header .logo-area .header-info-box {
+        padding: 4px 20px 0 80px;
+        margin: 0 0 16px 57px;
     }
-
-    .skill-graph .single-skill {
-        height: 335px;
+    .main-header .logo-area .header-info-box-2 {
+        padding: 4px 20px 0 80px;
+        margin: 0 0 16px 57px;
     }
-
-    .thumb-slides-container {
-        margin: 0 auto;
-        max-width: 285px;
+    .main-header .header-search ul li.menuleft-address {
+        padding: 8px 5px;
+        float: right;
     }
-
-    #message-success {
-        float: left;
-        margin: 24px auto;
+    .main-header .header-search ul li.menuleft-search {
+        float: right;
+    }
+    .main-header .header-search .dropdown {
         position: relative;
-        width: 100%;
     }
-
-    #message-success p{
-        width: 100%;
+    .main-header .header-search .dropdown-menu {
+        left: 0;
+    }
+    .header-2.main-header .header-search .dropdown-menu {
+        left: auto;
+    }
+    .sticky-menu {
+        position: relative !important;
+    }
+    .navana-slides.owl-theme .owl-nav div {
+        display: none;
+    }
+    .navana-single-slide h2 {
+        font-size: 30px;
+    }
+    .home-btn-1,
+    .home-btn-2 {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    .about-image {
         text-align: center;
     }
-
-    .protfolio-item li {
-        float: left;
-        margin-right: 0;
-        margin-bottom: 20px;
+    .about-image img {
+        position: relative;
+        top: 0;
+    }
+    .section-title p {
         width: 100%;
     }
-
-    .portfolio-category li {
-        margin-right: 10px;
+    .single-counter {
+        margin: 10px 0 20px;
     }
-
-    .portfolio-category li a {
-        font-size: 12px;
+    .client-slider.owl-theme .owl-nav .owl-next {
+        right: -13%;
     }
-
-    .about-inner, .skill-inner, .experience-inner, 
-    .education-inner, .portfolio-inner, .team-inner, 
-    .funfact-inner, .testimonial-inner, .blog-inner, .contact-inner {
-        padding: 0;
+    .client-slider.owl-theme .owl-nav .owl-prev {
+        left: -13%;
     }
-
+    footer .footer-widget:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    footer .copyright-text p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-menu {
+        text-align: center;
+    }
+    .client-item-two {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .client-item-two,
+    .client-item-two-wrap {
+        border: none;
+    }
+    #chartContainer {
+        margin-bottom: 30px;
+    }
+    .single-portfolio img {
+        width: 100%;
+    }
+    .error-page-wrap h1 {
+        font-size: 50px;
+        letter-spacing: 13px;
+    }
+    .error-page-wrap h2 {
+        font-size: 22px;
+    }
+    .sidebar-padding-right {
+        padding-right: 15px;
+    }
+    .sidebar-padding-left {
+        padding-left: 15px;
+    }   
+	.pricing-table-default {
+        margin-bottom: 60px;
+    }
 }
+/* Wide Mobile Layout: 480px. */
 
-@media only screen and (max-width: 359px) {
-
-    .home-title {
-        font-size: 32px;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .error-page-wrap h1 {
+        font-size: 150px;
+        letter-spacing: 20px;
     }
-
-    .home-subtitle {
-        font-size: 12px;
-    }
-
-    .thumb-slides-container {
-        max-width: 250px;
+    .error-page-wrap h2 {
+        font-size: 2rem;
     }
 }
