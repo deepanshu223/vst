@@ -1,7 +1,30 @@
+
+
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -409,7 +432,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Online Product and Growth Stratergy</h4>
 <div class="cat">Full Time Consulting</div>
 </div>
-<a class="overlay" href="www.braaga.com"></a>
+<a class="overlay" href="https://www.braaga.com"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -422,7 +445,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Online Product Design</h4>
 <div class="cat">Full Time Consulting</div>
 </div>
-<a class="overlay" href="www.sodapoplove.com"></a>
+<a class="overlay" href="https://www.sodapoplove.com"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
@@ -435,7 +458,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Product Design</h4>
 <div class="cat">Consulting Project</div>
 </div>
-<a class="overlay" href="www.15bells.com"></a>
+<a class="overlay" href=https://"www.15bells.com"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
@@ -448,7 +471,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Product Design</h4>
 <div class="cat">In-house Consulting</div>
 </div>
-<a class="overlay" href="www.nexuscircle.com"></a>
+<a class="overlay" href="https://www.nexuscircle.com"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp" data-wow-duration="2s">
@@ -461,7 +484,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>ML/AI Product Design</h4>
 <div class="cat">In-House Consulting</div>
 </div>
-<a class="overlay" href="www.avyukt.com"></a>
+<a class="overlay" href="https://www.avyukt.com"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -474,7 +497,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Product Optimisation</h4>
 <div class="cat">Consulting Project</div>
 </div>
-<a class="overlay" href="www.livesuada.com"></a>
+<a class="overlay" href="https://www.livesuada.com"></a>
 </div>
 </div>
 </div>
@@ -483,13 +506,143 @@ Facebook Certified Advertising and Planning Certification.
 </section>
 
 
+<section class="service-area section-gap" id="service">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="section-title">
+<h2>Blog Articles</h2>
+<p></p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-8">
+<div class="single-post row">
+
+<div class="col-lg-12 col-md-12 ">
+<div class="feature-img">
+<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+</div>
+<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
+<p class="excert">
+MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+on boot camp when you can get the MCSE study materials yourself at a fraction.
+</p>
+
+<div class="col-lg-12  col-md-12 meta-details">
+<div class="user-details row">
+<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
+<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
+<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
+<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
+</div>
+</div>
+
+<a href="#" class="primary-btn" data-text="View More">
+<span>V</span>
+<span>i</span>
+<span>e</span>
+<span>w</span>
+<span> </span>
+<span>M</span>
+<span>o</span>
+<span>r</span>
+<span>e</span>
+</a>
+
+</div>
+</div>
 
 
 
+</div>
+<div class="col-lg-4 col-md-8">
+<div class="single-post row">
+
+<div class="col-lg-12 col-md-12 ">
+<div class="feature-img">
+<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+</div>
+<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
+<p class="excert">
+MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+on boot camp when you can get the MCSE study materials yourself at a fraction.
+</p>
+
+<div class="col-lg-12  col-md-12 meta-details">
+<div class="user-details row">
+<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
+<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
+<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
+<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
+</div>
+</div>
+
+<a href="#" class="primary-btn" data-text="View More">
+<span>V</span>
+<span>i</span>
+<span>e</span>
+<span>w</span>
+<span> </span>
+<span>M</span>
+<span>o</span>
+<span>r</span>
+<span>e</span>
+</a>
+
+</div>
+</div>
 
 
 
-<
+</div>
+<div class="col-lg-4 col-md-8">
+<div class="single-post row">
+
+<div class="col-lg-12 col-md-12 ">
+<div class="feature-img">
+<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+</div>
+<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
+<p class="excert">
+MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+on boot camp when you can get the MCSE study materials yourself at a fraction.
+</p>
+
+<div class="col-lg-12  col-md-12 meta-details">
+<div class="user-details row">
+<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
+<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
+<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
+<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
+</div>
+</div>
+
+<a href="#" class="primary-btn" data-text="View More">
+<span>V</span>
+<span>i</span>
+<span>e</span>
+<span>w</span>
+<span> </span>
+<span>M</span>
+<span>o</span>
+<span>r</span>
+<span>e</span>
+</a>
+
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+</section>
+
+
+
 
 
 <section class="contact-area section-gap">
@@ -520,7 +673,7 @@ Facebook Certified Advertising and Planning Certification.
 <div class="col-lg-4 col-md-4">
 <div class="contact-box">
 <h4>Website</h4>
-<p style="color: white">www.vasishtachary.com</p>
+<p style="color: white">https://www.vasishtachary.com</p>
 </div>
 </div>
 </div>
