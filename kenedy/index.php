@@ -6,7 +6,7 @@ $headers = array('Accept' => 'application/json');
 $data = array();
 //Fetch all categories
 $body = Unirest\Request\Body::json($data);
-$response = Unirest\Request::get('https://deepanshuagarwal.com/blog/wp-json/wp/v2/categories', $headers, $body);
+$response = Unirest\Request::get('https://vasishtachary.com/wp-json/wp/v2/categories', $headers, $body);
 if($response->code != 200){
   $categories_fetched = false;
 }else{
@@ -515,8 +515,6 @@ Facebook Certified Advertising and Planning Certification.
 </div>
 </div>
 <div class="row">
-<div class="col-lg-4 col-md-8">
-<div class="single-post row">
 <?php 
           //Fetch all blog posts
           $body = Unirest\Request\Body::json($data);
@@ -530,27 +528,40 @@ Facebook Certified Advertising and Planning Certification.
              $count ++;
              If($count>=4){break;}
              ?>
+<div class="col-lg-4 col-md-8">
+<div class="single-post row">
 <!-- Blog Post Start-->
 <div class="col-lg-12 col-md-12 ">
 <div class="feature-img">
-<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="<?=json_encode($post->title->rendered)?>">
 </div>
-<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
+<a class="posts-title" href="<?=$post->link?>"><h3><?=$post->title->rendered?></h3></a>
 <p class="excert">
-MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
-on boot camp when you can get the MCSE study materials yourself at a fraction.
+<?=$post->excerpt->rendered?>
 </p>
 
 <div class="col-lg-12  col-md-12 meta-details">
 <div class="user-details row">
-<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
-<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
-<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
+<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Vasishta Chary</a> <span class="lnr lnr-user"></span></p>
+<?php
+
+$myDateTime = DateTime::createFromFormat('Y-m-d\TH:i:s', $post->date);
+$newDateString = $myDateTime->format('d M, Y');
+?>
+<p class="date col-lg-3 col-md-3 col-3"><a href="#"><?=$newDateString?></a> </br><span class="lnr lnr-calendar-full"></span></p>
+<!-- <p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>-->
+<?php if($categories_fetched){
+	$post_categories = array();
+	foreach($post->categories as $cat){ ?>
+	<p class="comments col-lg-3 col-md-3 col-3"><a href="<?=$categories[$cat]['link']?>">
+	<?=$categories[$cat]['name']?></a> <span class="lnr lnr-bubble"></span></p>
+	<?php }
+}?>
+
 </div>
 </div>
 
-<a href="#" class="primary-btn" data-text="View More">
+<a href="<?=$post->link?>" class="primary-btn" data-text="View More">
 <span>V</span>
 <span>i</span>
 <span>e</span>
@@ -564,11 +575,12 @@ on boot camp when you can get the MCSE study materials yourself at a fraction.
 
 </div>
 </div>
-
+</div>
 <!-- Blog Post End-->
 <?php }
           } ?>
 
+</div>
 </div>
 </section>
 
