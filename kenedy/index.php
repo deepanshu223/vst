@@ -1,29 +1,27 @@
-
+<?php
+require_once 'vendor/autoload.php';
+$categories_fetched = true;
+$categories = array();
+$headers = array('Accept' => 'application/json');
+$data = array();
+//Fetch all categories
+$body = Unirest\Request\Body::json($data);
+$response = Unirest\Request::get('https://deepanshuagarwal.com/blog/wp-json/wp/v2/categories', $headers, $body);
+if($response->code != 200){
+  $categories_fetched = false;
+}else{
+  $category_response = $response->body;
+  foreach($category_response as $category){
+    $categories[$category->id] = array("name"=>$category->name,"link"=>$category->link,"slug"=>$category->slug);
+  }
+}
+?>
 
 
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <head>
 
@@ -506,7 +504,7 @@ Facebook Certified Advertising and Planning Certification.
 </section>
 
 
-<section class="service-area section-gap" id="service">
+<section class="service-area section-gap" id="blog">
 <div class="container">
 <div class="row">
 <div class="col-lg-12">
@@ -519,7 +517,20 @@ Facebook Certified Advertising and Planning Certification.
 <div class="row">
 <div class="col-lg-4 col-md-8">
 <div class="single-post row">
-
+<?php 
+          //Fetch all blog posts
+          $body = Unirest\Request\Body::json($data);
+          
+          $response = Unirest\Request::get('https://vasishtachary.com/wp-json/wp/v2/posts', $headers, $body);
+          $response->code;
+          if($response->code == 200){
+            $posts = $response->body;
+            $count = 0; 
+            foreach ($posts as $post){ 
+             $count ++;
+             If($count>=4){break;}
+             ?>
+<!-- Blog Post Start-->
 <div class="col-lg-12 col-md-12 ">
 <div class="feature-img">
 <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
@@ -554,89 +565,9 @@ on boot camp when you can get the MCSE study materials yourself at a fraction.
 </div>
 </div>
 
-
-
-</div>
-<div class="col-lg-4 col-md-8">
-<div class="single-post row">
-
-<div class="col-lg-12 col-md-12 ">
-<div class="feature-img">
-<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
-</div>
-<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
-<p class="excert">
-MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
-on boot camp when you can get the MCSE study materials yourself at a fraction.
-</p>
-
-<div class="col-lg-12  col-md-12 meta-details">
-<div class="user-details row">
-<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
-<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
-<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
-</div>
-</div>
-
-<a href="#" class="primary-btn" data-text="View More">
-<span>V</span>
-<span>i</span>
-<span>e</span>
-<span>w</span>
-<span> </span>
-<span>M</span>
-<span>o</span>
-<span>r</span>
-<span>e</span>
-</a>
-
-</div>
-</div>
-
-
-
-</div>
-<div class="col-lg-4 col-md-8">
-<div class="single-post row">
-
-<div class="col-lg-12 col-md-12 ">
-<div class="feature-img">
-<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
-</div>
-<a class="posts-title" href="blog-single.html"><h3>Astronomy Binoculars A Great Alternative</h3></a>
-<p class="excert">
-MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
-on boot camp when you can get the MCSE study materials yourself at a fraction.
-</p>
-
-<div class="col-lg-12  col-md-12 meta-details">
-<div class="user-details row">
-<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Mark wiens</a> <span class="lnr lnr-user"></span></p>
-<p class="date col-lg-3 col-md-3 col-3"><a href="#">12 Dec, 2017</a> </br><span class="lnr lnr-calendar-full"></span></p>
-<p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>
-<p class="comments col-lg-3 col-md-3 col-3"><a href="#">06 Comments</a> <span class="lnr lnr-bubble"></span></p>
-</div>
-</div>
-
-<a href="#" class="primary-btn" data-text="View More">
-<span>V</span>
-<span>i</span>
-<span>e</span>
-<span>w</span>
-<span> </span>
-<span>M</span>
-<span>o</span>
-<span>r</span>
-<span>e</span>
-</a>
-
-</div>
-</div>
-
-
-
-</div>
+<!-- Blog Post End-->
+<?php }
+          } ?>
 
 </div>
 </section>
