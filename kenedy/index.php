@@ -533,7 +533,12 @@ Facebook Certified Advertising and Planning Certification.
 <!-- Blog Post Start-->
 <div class="col-lg-12 col-md-12 ">
 <div class="feature-img">
-<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="<?=json_encode($post->title->rendered)?>">
+<?php
+$image = "";
+if($post->better_featured_image){
+	$image = $post->better_featured_image->source_url;
+}?>
+<img class="img-fluid" src="<?=$image?>" alt="<?=json_encode($post->title->rendered)?>">
 </div>
 <a class="posts-title" href="<?=$post->link?>"><h3><?=$post->title->rendered?></h3></a>
 <p class="excert">
@@ -673,25 +678,36 @@ Copyright &copy; All rights reserved | Vasishta Chary</a>
 </a>
 </div>
 
-<script src="js/vendor/jquery-2.2.4.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="../../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/vendor/bootstrap.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script type="1370582480f2033b77f0c704-text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-<script src="js/easing.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/hoverIntent.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/superfish.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/mn-accordion.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/jquery.ajaxchimp.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/jquery.magnific-popup.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/owl.carousel.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/jquery.nice-select.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/isotope.pkgd.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/jquery.circlechart.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/mail-script.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/wow.min.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-<script src="js/main.js" type="1370582480f2033b77f0c704-text/javascript"></script>
-
-<
+<script src="js/vendor/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" type="text/javascript"></script>
+<script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="js/easing.min.js" type="text/javascript"></script>
+<script src="js/hoverIntent.js" type="text/javascript"></script>
+<script src="js/superfish.min.js" type="text/javascript"></script>
+<script src="js/mn-accordion.js" type="text/javascript"></script>
+<script src="js/jquery.ajaxchimp.min.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.nice-select.min.js" type="text/javascript"></script>
+<script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="js/jquery.circlechart.js" type="text/javascript"></script>
+<script src="js/mail-script.js" type="text/javascript"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/jquery.appear.js" type="text/javascript"></script>
+<script>
+//Skill
+    jQuery('.skillbar').each(function() {
+      jQuery(this).appear(function() {
+        jQuery(this).find('.count-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },3000);
+        var percent = jQuery(this).attr('data-percent');
+        jQuery(this).find('.count').html('<span>' + percent + '</span>');
+      });
+    });
+</script>
 </body>
 
 <!-- Mirrored from colorlib.com/preview/theme/kenedy/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Mar 2019 21:10:47 GMT -->
