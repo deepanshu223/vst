@@ -72,7 +72,7 @@ if($response->code != 200){
 <li><a href="#certifications">Certifications</a></li>
 
 <li><a href="#work">Latest Work</a></li>
-<li><a href="www.vasishtachary.com">Blog</a></li>
+<li><a href="#blog">Blog</a></li>
 </ul>
 </nav>
 </div>
@@ -112,19 +112,19 @@ Product <span class="designer">Consultant</span> and Growth <span class="develop
 <div class="brand-wrap">
 <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
 <div class="col single-brand">
-<a href="#"><img class="mx-auto" src="img/brand/b1.png" alt=""></a>
+<a href="#"><h3>PushStart</h3></a>
 </div>
 <div class="col single-brand">
-<a href="#"><img class="mx-auto" src="img/brand/b2.png" alt=""></a>
+<a href="ascian.in"><h3>Ascian Solutions</h3></a>
 </div>
 <div class="col single-brand">
-<a href="#"><img class="mx-auto" src="img/brand/b3.png" alt=""></a>
+<a href="#"><h3>1001 Things to Do</h3></a>
 </div>
 <div class="col single-brand">
-<a href="#"><img class="mx-auto" src="img/brand/b4.png" alt=""></a>
+<a href="#"><h3>Jabalpur SmartCity</h3></a>
 </div>
 <div class="col single-brand">
-<a href="#"><img class="mx-auto" src="img/brand/b5.png" alt=""></a>
+<a href="#"><h3>TheStartupToday</h3></a>
 </div>
 </div>
 </div>
