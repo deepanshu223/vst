@@ -6,7 +6,7 @@ $headers = array('Accept' => 'application/json');
 $data = array();
 //Fetch all categories
 $body = Unirest\Request\Body::json($data);
-$response = Unirest\Request::get('https://vasishtachary.com/wp-json/wp/v2/categories', $headers, $body);
+$response = Unirest\Request::get('https://vasishtachary.com/blog/wp-json/wp/v2/categories', $headers, $body);
 if($response->code != 200){
   $categories_fetched = false;
 }else{
@@ -519,7 +519,7 @@ Facebook Certified Advertising and Planning Certification.
           //Fetch all blog posts
           $body = Unirest\Request\Body::json($data);
           
-          $response = Unirest\Request::get('https://vasishtachary.com/wp-json/wp/v2/posts', $headers, $body);
+          $response = Unirest\Request::get('https://vasishtachary.com/blog/wp-json/wp/v2/posts', $headers, $body);
           $response->code;
           if($response->code == 200){
             $posts = $response->body;
@@ -656,7 +656,7 @@ $newDateString = $myDateTime->format('d M, Y');
 <div class="footer-social">
 <a href="https://www.instagram.com/kawibaba/"><i class="fa fa-instagram"></i></a>
 <a href="https://www.linkedin.com/in/vasishtachary/"><i class="fa fa-linkedin"></i></a>
-<a href="https://vasishtachary.com/"><i class="fa fa-wordpress"></i></a>
+<a href="https://vasishtachary.com/blog"><i class="fa fa-wordpress"></i></a>
 <a href="https://wa.me/919662615070"><i class="fa fa-whatsapp"></i></a>
 </div>
 </div>
