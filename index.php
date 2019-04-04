@@ -476,7 +476,7 @@ Facebook Certified Advertising and Planning Certification.
 <div class="relative">
 <div class="thumb">
 <div class="overlay overlay-bg"></div>
-<img class="image img-fluid" src="img/work/w5.png" alt="">
+<img class="image img-fluid" src="img/work/avyuct.jpg" alt="">
 </div>
 <div class="middle">
 <h4>ML/AI Product Design</h4>
@@ -489,7 +489,7 @@ Facebook Certified Advertising and Planning Certification.
 <div class="relative">
 <div class="thumb">
 <div class="overlay overlay-bg"></div>
-<img class="image img-fluid" src="img/work/avyuct.jpg" alt="">
+<img class="image img-fluid" src="img/work/w6.png" alt="">
 </div>
 <div class="middle">
 <h4>Product Optimisation</h4>
