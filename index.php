@@ -72,7 +72,7 @@ if($response->code != 200){
 <li><a href="#certifications">Certifications</a></li>
 
 <li><a href="#work">Latest Work</a></li>
-<li><a href="#blog">Blog</a></li>
+<li><a href="https://vasishtachary.com/blog" target="_blank">Blog</a></li>
 </ul>
 </nav>
 </div>
@@ -152,7 +152,7 @@ Growth Hacker and Product Consultant by profession, Founder of Multiple Startups
 
 </p>
 </div>
-<a href="#" class="primary-btn white" data-text="Download Profile">
+<a href="https://vasishtachary.com/work.pdf" class="primary-btn white" data-text="Download Profile" target="_blank">
 <span>D</span>
 <span>o</span>
 <span>w</span>
@@ -163,7 +163,7 @@ Growth Hacker and Product Consultant by profession, Founder of Multiple Startups
 <span>d</span>
 
 </a>
-<a href="www.ascian.in" class="primary-btn" data-text="Ascian Solution">
+<a href="https://.ascian.in" class="primary-btn" data-text="Ascian Solution" target="_blank">
 <span>A</span>
 <span>s</span>
 <span>c</span>
@@ -284,7 +284,7 @@ As a consultant i make it all possible, from a road map to execution planning, S
 </h4>
 <p>I have conducted workshops on Design Thinking, Business Communication, & Growth Hacking. My core workshops happen with colleges, I have done on campuses of JIMS, IIT Delhi, Delhi University and more. I also conduct open workshop for entrepreneurs focusing on advanced learning.</p></br> 
 
-<a href="#" class="primary-btn white" data-text="Workshop Profile">
+<a href="https://vasishtachary.com/workshop.pdf" class="primary-btn white" data-text="Workshop Profile" target="_blank">
 <span>D</span>
 <span>o</span>
 <span>w</span>
@@ -430,7 +430,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Online Product and Growth Stratergy</h4>
 <div class="cat">Full Time Consulting</div>
 </div>
-<a class="overlay" href="https://www.braaga.com"></a>
+<a class="overlay" href="https://www.braaga.com" target="_blank"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
@@ -443,7 +443,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Online Product Design</h4>
 <div class="cat">Full Time Consulting</div>
 </div>
-<a class="overlay" href="https://www.sodapoplove.com"></a>
+<a class="overlay" href="https://www.sodapoplove.com" target="_blank"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
@@ -456,7 +456,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Product Design</h4>
 <div class="cat">Consulting Project</div>
 </div>
-<a class="overlay" href=https://"www.15bells.com"></a>
+<a class="overlay" href=https://"www.15bells.com" target="_blank"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
@@ -469,7 +469,7 @@ Facebook Certified Advertising and Planning Certification.
 <h4>Product Design</h4>
 <div class="cat">In-house Consulting</div>
 </div>
-<a class="overlay" href="https://www.nexuscircle.com"></a>
+<a class="overlay" href="https://www.nexuscircle.com" target="_blank"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp" data-wow-duration="2s">
@@ -482,20 +482,20 @@ Facebook Certified Advertising and Planning Certification.
 <h4>ML/AI Product Design</h4>
 <div class="cat">In-House Consulting</div>
 </div>
-<a class="overlay" href="https://www.avyukt.com"></a>
+<a class="overlay" href="https://www.avyuct.com" target="_blank"></a>
 </div>
 </div>
 <div class="single-work col-lg-4 col-md-6 col-sm-12 all branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 <div class="relative">
 <div class="thumb">
 <div class="overlay overlay-bg"></div>
-<img class="image img-fluid" src="img/work/w6.png" alt="">
+<img class="image img-fluid" src="img/work/avyuct.jpg" alt="">
 </div>
 <div class="middle">
 <h4>Product Optimisation</h4>
 <div class="cat">Consulting Project</div>
 </div>
-<a class="overlay" href="https://www.livesuada.com"></a>
+<a class="overlay" href="https://www.livesuada.com" target="_blank"></a>
 </div>
 </div>
 </div>
@@ -545,28 +545,8 @@ if($post->better_featured_image){
 <?=$post->excerpt->rendered?>
 </p>
 
-<div class="col-lg-12  col-md-12 meta-details">
-<div class="user-details row">
-<p class="user-name col-lg-3 col-md-3 col-3"><a href="#">Vasishta Chary</a> <span class="lnr lnr-user"></span></p>
-<?php
 
-$myDateTime = DateTime::createFromFormat('Y-m-d\TH:i:s', $post->date);
-$newDateString = $myDateTime->format('d M, Y');
-?>
-<p class="date col-lg-3 col-md-3 col-3"><a href="#"><?=$newDateString?></a> </br><span class="lnr lnr-calendar-full"></span></p>
-<!-- <p class="view col-lg-3 col-md-3 col-3"><a href="#">1.2M Views</a> <span class="lnr lnr-eye"></span></p>-->
-<?php if($categories_fetched){
-	$post_categories = array();
-	foreach($post->categories as $cat){ ?>
-	<p class="comments col-lg-3 col-md-3 col-3"><a href="<?=$categories[$cat]['link']?>">
-	<?=$categories[$cat]['name']?></a> <span class="lnr lnr-bubble"></span></p>
-	<?php }
-}?>
-
-</div>
-</div>
-
-<a href="<?=$post->link?>" class="primary-btn" data-text="View More">
+<a href="<?=$post->link?>" class="primary-btn" data-text="View More" target="_blank">
 <span>V</span>
 <span>i</span>
 <span>e</span>
@@ -654,10 +634,10 @@ $newDateString = $myDateTime->format('d M, Y');
 <h4>Follow Me</h4>
 </div>
 <div class="footer-social">
-<a href="https://www.instagram.com/kawibaba/"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com/in/vasishtachary/"><i class="fa fa-linkedin"></i></a>
-<a href="https://vasishtachary.com/blog"><i class="fa fa-wordpress"></i></a>
-<a href="https://wa.me/919662615070"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/kawibaba/" target="_blank"><i class="fa fa-instagram" ></i></a>
+<a href="https://www.linkedin.com/in/vasishtachary/" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a href="https://vasishtachary.com/blog" target="_blank"><i class="fa fa-wordpress"></i></a>
+<a href="https://wa.me/919662615070" target="_blank"><i class="fa fa-whatsapp"></i></a>
 </div>
 </div>
 </div>
