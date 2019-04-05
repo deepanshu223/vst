@@ -89,7 +89,7 @@ if($response->code != 200){
 <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
 Product <span class="designer">Consultant</span> and Growth <span class="developer">Hacker</span>
 </div>
-<a href="https://wa.me/919662615070" class="primary-btn" data-text="Get in Touch">
+<a href="https://wa.me/919662915070" class="primary-btn" data-text="Get in Touch">
 <span>H</span>
 <span>i</span>
 <span>r</span>
@@ -607,7 +607,7 @@ if($post->better_featured_image){
 </div>
 <div class="row">
 <div class="col-lg-12 text-center">
-<a href="https://wa.me/919662615070" class="primary-btn mt-50" data-text="Get in Touch">
+<a href="https://wa.me/919662915070" class="primary-btn mt-50" data-text="Get in Touch">
 <span>H</span>
 <span>i</span>
 <span>r</span>
