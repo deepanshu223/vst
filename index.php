@@ -118,7 +118,7 @@ Product <span class="designer">Consultant</span> and Growth <span class="develop
 <a href="ascian.in"><h3>Ascian Solutions</h3></a>
 </div>
 <div class="col single-brand">
-<a href="#"><h3>1001 Things to Do</h3></a>
+<a href="#"><h3>Headstart</h3></a>
 </div>
 <div class="col single-brand">
 <a href="#"><h3>Jabalpur SmartCity</h3></a>
@@ -144,11 +144,11 @@ Product <span class="designer">Consultant</span> and Growth <span class="develop
 </div>
 <div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 <p>
-Growth Hacker and Product Consultant by profession, Founder of Multiple Startups with experience in Digital Marketing, Product Designing, Growth Strategising, Advertising, and Content Marketing.
+Growth Hacker and Product Consultant by profession, Founder of Multiple Startups with experience in Design Thinking, Product Designing, Growth Strategising, Advertising, and Digital Marketing.
 
-                        </br></br>I have successfully executed over 50 marketing campaigns–covering emails, Facebook/Google Ads and Blogger meets, have custom-designed several B2B projects, 55 website projects, 15 mobile app projects.
+</br></br>I have successfully executed over 50 marketing campaigns–covering E commerce, SaaS, Political and Fashion Industry, have custom-designed 50+ website, 15+ mobile app and have been involved in physical product design such as bags, Eco friendly lifestyle products, mystery boxes and more with multiple startups as well .
 
-                        </br></br>I can help you optimise your product, increase engagement goals, collect and utilise comsumption data and use it to make your product bigger and better. Hit me up for a consult 
+                        </br></br>can help you design, prototype and optimize your product, increase engagement goals, collect and utilize consumption data and use it to make your product bigger and better.
 
 </p>
 </div>
@@ -190,9 +190,9 @@ Growth Hacker and Product Consultant by profession, Founder of Multiple Startups
 </div>
 <div class="row">
                 <p class="content-detail">
-                  
+
                 </p>
-              
+
               <div class="col-md-9 content-right">
                 <!--SKILLST-->
                 <div class="skillst">
@@ -222,7 +222,7 @@ Growth Hacker and Product Consultant by profession, Founder of Multiple Startups
                   </div>
                   <div class="skillbar" data-percent="63%">
                     <div class="title head-sm">
-                      Brand Identity Design 
+                      Brand Identity Design
                     </div>
                     <div class="count-bar">
                       <div class="count"></div>
@@ -282,7 +282,7 @@ As a consultant i make it all possible, from a road map to execution planning, S
 <span class="lnr lnr-database"></span>
 <h4><span>Training</span> And Development
 </h4>
-<p>I have conducted workshops on Design Thinking, Business Communication, & Growth Hacking. My core workshops happen with colleges, I have done on campuses of JIMS, IIT Delhi, Delhi University and more. I also conduct open workshop for entrepreneurs focusing on advanced learning.</p></br> 
+<p>I have conducted workshops on Design Thinking, Business Communication, & Growth Hacking. My core workshops happen with colleges, I have done on campuses of JIMS, IIT Delhi, Delhi University and more. I also conduct open workshop for entrepreneurs focusing on advanced learning.</p></br>
 
 <a href="https://vasishtachary.com/workshop.pdf" class="primary-btn white" data-text="Workshop Profile" target="_blank">
 <span>D</span>
@@ -515,16 +515,16 @@ Facebook Certified Advertising and Planning Certification.
 </div>
 </div>
 <div class="row">
-<?php 
+<?php
           //Fetch all blog posts
           $body = Unirest\Request\Body::json($data);
-          
+
           $response = Unirest\Request::get('https://vasishtachary.com/blog/wp-json/wp/v2/posts', $headers, $body);
           $response->code;
           if($response->code == 200){
             $posts = $response->body;
-            $count = 0; 
-            foreach ($posts as $post){ 
+            $count = 0;
+            foreach ($posts as $post){
              $count ++;
              If($count>=4){break;}
              ?>
