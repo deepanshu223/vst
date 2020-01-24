@@ -86,11 +86,15 @@ h6 {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 100px;
+	font-family: 'Pristina';
+	font-style: normal;
+	font-weight: normal;
 }
 
 h2 {
 	font-size: 35px;
+	
 }
 
 h3 {
