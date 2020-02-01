@@ -1,3 +1,21 @@
+<?php
+require_once '../vendor/autoload.php';
+$categories_fetched = true;
+$categories = array();
+$headers = array('Accept' => 'application/json');
+$data = array();
+//Fetch all categories
+$body = Unirest\Request\Body::json($data);
+$response = Unirest\Request::get('https://vasishtachary.com/blog/wp-json/wp/v2/categories', $headers, $body);
+if($response->code != 200){
+  $categories_fetched = false;
+}else{
+  $category_response = $response->body;
+  foreach($category_response as $category){
+    $categories[$category->id] = array("name"=>$category->name,"link"=>$category->link,"slug"=>$category->slug);
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -674,112 +692,47 @@ head>
 
 					<!-- Blog Row Start -->
 					<div class="row blog-masonry mt-100 mb-50">
-
+					<?php
+						$body = Unirest\Request\Body::json($data);
+						$response = Unirest\Request::get('https://vasishtachary.com/blog/wp-json/wp/v2/posts', $headers, $body);
+						$response->code;
+						if($response->code == 200){
+							$posts = $response->body;
+							$count = 0;
+							foreach ($posts as $post){
+								$count ++;
+								if($count>=7){break;}
+						?>
 						<!-- Blog Item -->
 						<div class="col-lg-4 col-sm-6">
 							<div class="blog-item">
 								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-1.jpg"></a>
+								<?php
+								$image = "";
+								if($post->better_featured_image){
+									$image = $post->better_featured_image->source_url;
+								}?>
+									<a href="<?=$post->link?>"><img alt="<?=json_encode($post->title->rendered)?>" src="<?=$image?>"></a>
 								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
+								<h4><a href="<?=$post->link?>"><?=$post->title->rendered?></a></h4>
 								<ul>
-                            		<li><a href="#">15 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-2.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">10 March 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-3.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">02 March 2019</a></li>
-                            		<li><a href="#">Work</a></li>
+                            		<?php if($categories_fetched){
+									$post_categories = array();
+									foreach($post->categories as $cat){ ?>
+										<li><a href="#"><a class="category_name" href="<?=$categories[$cat]['link']?>">
+											<?=$categories[$cat]['name']?>
+										</a></a></li><!-- Category -->
+									<?php }
+								}?>
                             	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
+								<p><?=$post->excerpt->rendered?></p>
 								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
+									<a href="<?=$post->link?>" class="btn-st">Read More</a>
 								</div>
 							</div>
 						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-4.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">29 March 2019</a></li>
-                            		<li><a href="#">Career</a></li>
-                            	</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-5.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-									<li><a href="#">14 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                            	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-6.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                           		 	<li><a href="#">29 April 2019</a></li>
-                           		 	<li><a href="#">Career</a></li>
-                        	    </ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
+						<?php }
+						} ?>						
 					</div>
             	</section>
 			</div>
