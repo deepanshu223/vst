@@ -43,7 +43,7 @@ Table of Content
 	text-decoration: none !important;
 }
 
-*:after, 
+*:after,
 *:before {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
@@ -68,7 +68,7 @@ a {
 			transition: all .3s ease-in-out;
 }
 
-a:hover, 
+a:hover,
 a:focus {
 	color: #fff;
 }
@@ -80,7 +80,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 	color: #fff;
 	font-weight: 600;
 }
@@ -102,7 +102,7 @@ h4 {
 }
 
 i, em {
-	font-style: normal; 
+	font-style: normal;
 }
 
 img {
@@ -234,12 +234,12 @@ blockquote span img {
 .audio-on .music-bg .lines span:nth-child(1) {
     -webkit-animation: musicline 2s 0.5s ease-out alternate infinite;
     		animation: musicline 2s 0.5s ease-out alternate infinite;
-}  
+}
 
 .audio-on .music-bg .lines span:nth-child(2) {
     -webkit-animation: musicline 2s 1s ease-out alternate infinite;
     		animation: musicline 2s 1s ease-out alternate infinite;
-} 
+}
 
 .audio-on .music-bg .lines span:nth-child(3) {
     -webkit-animation: musicline 2s 1.5s ease-out alternate infinite;
@@ -576,8 +576,8 @@ blockquote span img {
  	background-image: url(../img/slider/slide-3.jpg);
 }
 
-.slide-kenburns-1, 
-.slide-kenburns-2, 
+.slide-kenburns-1,
+.slide-kenburns-2,
 .slide-kenburns-3 {
  	background-repeat: no-repeat;
  	background-position: center;
@@ -731,12 +731,12 @@ blockquote span img {
 	color: #fff;
 	margin: 0;
 	padding: 0;
-	overflow: auto; 
+	overflow: auto;
 	-webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
 			transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
 }
 
-#about:target .pt-home, 
+#about:target .pt-home,
 #resume:target .pt-home,
 #portfolio:target .pt-home,
 #blog:target .pt-home,
@@ -746,9 +746,9 @@ blockquote span img {
 			transition: all .5s ease;
 }
 
-.pt-about, 
-.pt-resume, 
-.pt-portfolio, 
+.pt-about,
+.pt-resume,
+.pt-portfolio,
 .pt-blog,
 .pt-contact {
 	background-color: #0e0f10;
@@ -975,7 +975,7 @@ blockquote:before,
 #contact:target .header-main ul li a {
 	-webkit-transform: scale(.8);
 			transform: scale(.8);
-} 
+}
 
 #about:target .icon-a,
 #resume:target .icon-r,
@@ -1045,7 +1045,7 @@ blockquote:before,
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow: hidden; 
+	overflow: hidden;
 	-webkit-background-size: cover;
 			background-size: cover;
 	background-position: center;
@@ -1651,7 +1651,7 @@ blockquote:before,
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
- 
+
 .pt-portfolio .portfolio-filter ul li.active {
 	color: #0e0f10;
 	background-color: #fff;
@@ -1670,7 +1670,7 @@ blockquote:before,
 .pt-portfolio .portfolio-items .item figure img {
 	opacity: 1;
 	width: 100%;
-	height: 100%; 
+	height: 100%;
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
@@ -1704,7 +1704,7 @@ blockquote:before,
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
-  
+
 .pt-portfolio .portfolio-items .item figure figcaption p {
 	position: absolute;
 	left: 0;
@@ -1728,7 +1728,7 @@ blockquote:before,
 	color: #fff;
 	font-weight: 900;
 }
- 
+
 .pt-portfolio .portfolio-items .item figure figcaption i {
 	position: absolute;
 	right: 0;
@@ -1741,25 +1741,25 @@ blockquote:before,
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
- 
+
 .pt-portfolio .portfolio-items .item figure:hover img {
 	opacity: 0.25;
 	-webkit-transform: scale(1.1);
-			transform: scale(1.1); 
+			transform: scale(1.1);
 }
- 
+
 .pt-portfolio .portfolio-items .item figure:hover h3 {
 	opacity: 1;
 }
- 
+
 .pt-portfolio .portfolio-items .item figure:hover p {
-	opacity: 1; 
+	opacity: 1;
 	-webkit-transform: translateX(0%);
 			transform: translateX(0%);
 }
- 
+
 .pt-portfolio .portfolio-items .item figure:hover i {
-	opacity: 1; 
+	opacity: 1;
 	-webkit-transform: translateX(0%);
 			transform: translateX(0%);
 }
@@ -2610,7 +2610,7 @@ blockquote:before,
     right: 0;
 }
 
-#preloader .left-side, 
+#preloader .left-side,
 #preloader .right-side {
 	position: absolute;
 	width: 50%;
@@ -2897,14 +2897,14 @@ blockquote:before,
     	width: 100%;
     	bottom: 0;
     	left: 0;
-	} 
+	}
 }
 
 /* ---------------------------------
 		15. Animation Css
 --------------------------------- */
 
-/* Animation zoomIn */ 
+/* Animation zoomIn */
 @-webkit-keyframes zoomIn {
 	from {
 		opacity: 0;
@@ -2927,7 +2927,7 @@ blockquote:before,
 	}
 }
 
-/* Animation rotating */ 
+/* Animation rotating */
 @-webkit-keyframes rotating {
 	from {
 		-webkit-transform: rotate(0deg);
@@ -2994,7 +2994,7 @@ blockquote:before,
     100% {height: 18px;}
 }
 
-/* Ken Burns Slide */ 
+/* Ken Burns Slide */
 @-webkit-keyframes kenburnsSlide {
  	0% {
  		opacity: 0;
@@ -3018,7 +3018,7 @@ blockquote:before,
 				transform: scale(1);
 	}
 }
- 
+
 @keyframes kenburnsSlide {
  	0% {
  		opacity: 0;
@@ -3043,7 +3043,7 @@ blockquote:before,
 	}
 }
 
-/* Background Line Animation */ 
+/* Background Line Animation */
 @-webkit-keyframes run {
 	0% {
 		top: -50%;
