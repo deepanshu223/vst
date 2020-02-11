@@ -732,7 +732,7 @@ head>
 							</div>
 						</div>
 						<?php }
-						} ?>						
+						} ?>
 					</div>
             	</section>
 			</div>
