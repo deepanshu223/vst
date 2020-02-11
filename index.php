@@ -1,5 +1,5 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 $categories_fetched = true;
 $categories = array();
 $headers = array('Accept' => 'application/json');
@@ -19,7 +19,7 @@ if($response->code != 200){
 <!DOCTYPE html>
 <html lang="en">
 
-head>
+<head>
 
 		<!-- Meta -->
         <meta charset="UTF-8">
